@@ -6,7 +6,7 @@ MESSAGE = '原文をここに入力'
 kks = pykakasi.kakasi()
 results = kks.convert(MESSAGE)
 result = ' '.join(result['hira'] for result in results)
-with open('MorseConverter\japanese_morse.json', encoding='utf-8') as f:
+with open('japanese_morse.json', encoding='utf-8') as f:
     word_dict = json.load(f)
 
 result_message = ''
