@@ -13,6 +13,7 @@ result_message = ''
 for x in result:
     try:
         result_message += word_dict[x]
+        result_message += ' '
     except:
         result_message += x
 
